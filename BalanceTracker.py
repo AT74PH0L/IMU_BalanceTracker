@@ -167,7 +167,6 @@ def plot_and_save_data():
 
     # Plot in main thread using after
     root.after(0, lambda: plot_3d_data(x_data, y_data, z_data))
-
 def plot_3d_data(x_data, y_data, z_data):
     fig = plt.figure(figsize=(5, 5))
     ax = fig.add_subplot(111, projection='3d')
